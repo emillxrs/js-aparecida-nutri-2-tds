@@ -18,15 +18,17 @@ for (var i = 0; i < pacientes.length; i++) {
     var alturaEhValida = true;
 
     if (peso <= 0 || peso >= 1000) {
-        console.log("Altura inválido!");
+        console.log("peso inválido!");
         pesoEhvalido = false;
         tdImc.textContent = "Peso inválido!";
+        paciente.style.Color = "red";
     }
 
     if (altura <= 0 || altura >= 3.00) {
         console.log("Altura inválida");
         alturaEhValida = false;
         tdImc.textContent = "Altura inválida!";
+        paciente.style.Color = "red";
     }
 
     if (alturaEhValida && pesoEhValido) {
